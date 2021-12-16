@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tip<span class="h1-span">Calculator</span></h1>
+    <div class="hero-container">
+      <div class="section-left">
+        <div class="content">
+          <p class="left-ptag">Bill</p>
+          <input
+            type="number"
+            class="input-field input-1"
+            placeholder="0"
+            min="1"
+          />
+        </div>
+        <div class="content">
+          <p class="left-ptag">Select Tip %</p>
+          <div class="grid-btns">
+            <button class="btn click-btn" value="5">5%</button>
+            <button class="btn click-btn" value="10">10%</button>
+            <button class="btn click-btn" value="15">15%</button>
+            <button class="btn click-btn" value="25">25%</button>
+            <button class="btn click-btn" value="50">50%</button>
+            <input
+              type="number"
+              class="custom-btn click-btn"
+              placeholder="Custom"
+              min="1"
+            />
+          </div>
+        </div>
+        <div class="content">
+          <p class="left-ptag">
+            Number of People<span class="error-span">Can't be zero</span>
+          </p>
+          <input
+            type="number"
+            class="input-field input-2"
+            placeholder="0"
+            min="1"
+          />
+        </div>
+      </div>
+      <div class="section-right">
+        <div class="content-right">
+          <p class="right-ptag">
+            Tip Amount<span class="right-ptag-span">/ person</span>
+          </p>
+          <span class="amount">$0.00</span>
+        </div>
+        <div class="content-right">
+          <p class="right-ptag">
+            Total<span class="right-ptag-span">/ person</span>
+          </p>
+          <span class="total">$0.00</span>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
